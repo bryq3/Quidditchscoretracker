@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_margin="20dp"
+        android:id="@+id/quidditch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Quidditch League"
+        android:textAlignment="center"
+        android:textSize="50sp"
+
+
+        />
+    <LinearLayout
+        android:background="@drawable/quidditch1"
+        android:id="@+id/mainArea"
+        android:layout_below="@id/quidditch"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:textSize="20sp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/teamAScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="60sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="30dp"
+                />
+            <ImageButton
+                android:onClick="addQuafflePointsA"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/quaffle1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quaffle +10 pts"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_marginBottom="25dp"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:onClick="addSnitchPointsA"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/snitch5"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snitch +150 pts"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="130dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/teamBScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="60sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="30dp"
+                />
+            <ImageButton
+                android:onClick="addQuafflePointsB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/quaffle1"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quaffle +10 pts"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_marginBottom="25dp"
+                android:textStyle="bold"
+                />
+            <ImageButton
+                android:onClick="addSnitchPointsB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/snitch5"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snitch +150 pts"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/communicate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text=""
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:onClick="newGame"
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        />
+</RelativeLayout>
